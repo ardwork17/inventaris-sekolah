@@ -231,4 +231,19 @@ class Admin extends CI_Controller
         Berhasil Update Data</div>');
         redirect('admin/peminjaman');
     }
+
+    public function laporan()
+    {
+        $data['title'] = 'Laporan';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+
+        // $data['admin'] = $this->db->get('data_barang')->result_array();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('admin/laporan', $data);
+        $this->load->view('templates/footer');
+    }
 }
