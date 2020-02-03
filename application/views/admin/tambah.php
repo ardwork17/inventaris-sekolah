@@ -14,19 +14,30 @@
                 </div>
                 <div class="form-group">
                     <label>Jumlah Barang</label>
-                    <input type="text" class="form-control" id="jumlah_barang" name="jumlah_barang" aria-describedby="emailHelp">
+                    <input type="number" class="form-control" id="jumlah_barang" name="jumlah_barang" aria-describedby="emailHelp">
                 </div>
                 <div class="form-group">
                     <label>Kondisi</label>
-                    <input type="text" class="form-control" id="kondisi" name="kondisi" aria-describedby="emailHelp">
+                    <select class="custom-select" id="kondisi" name="kondisi">
+                        <option selected>Pilih...</option>
+                        <option value="Baru">Baru</option>
+                        <option value="Bekas">Bekas</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label>Harga</label>
-                    <input type="text" class="form-control" id="harga" name="harga" aria-describedby="emailHelp">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp</span>
+                        </div>
+                        <input type="text" class="form-control" id="harga" name="harga" aria-label="Rupiah amount (with dot and two decimal places)">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Keterangan</label>
-                    <input type="text" class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp">
+                    <label for="keterangan">Keterangan</label>
+                    <textarea type="text" class="form-control" id="keterangan" name="keterangan" rows="3"></textarea>
+                    <!-- <label>Keterangan</label>
+                    <input type="text area" class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp"> -->
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah</button>
             </form>

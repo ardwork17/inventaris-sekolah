@@ -31,7 +31,7 @@
              <i class="fas fa-fw fa-people-carry"></i>
              <span>Peminjaman</span></a>
          <a class="nav-link" href=<?= base_url('admin/laporan/'); ?>>
-             <i class="fas fa-fw fa-folder"></i>
+             <i class="fas fa-fw fa-book"></i>
              <span>Laporan</span></a>
      </li>
 
