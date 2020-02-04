@@ -246,4 +246,13 @@ class Admin extends CI_Controller
         $this->load->view('admin/laporan', $data);
         $this->load->view('templates/footer');
     }
+
+    public function hapus_pinjam($id)
+    {
+        $where = array('id' => $id);
+        $this->m_barang->hapus_pinjam($where, 'data_pinjam');
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+        Berhasil Hapus Data</div>');
+        redirect('admin/peminjaman');
+    }
 }

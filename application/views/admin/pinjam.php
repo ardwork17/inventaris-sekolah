@@ -14,15 +14,19 @@
                 </div>
                 <div class="form-group">
                     <label>Jumlah Barang</label>
-                    <input type="text" class="form-control" id="jumlah_barang" name="jumlah_barang" aria-describedby="emailHelp">
+                    <input type="number" class="form-control" id="jumlah_barang" name="jumlah_barang" aria-describedby="emailHelp">
                 </div>
                 <div class="form-group">
                     <label>Status</label>
-                    <input type="text" class="form-control" id="status" name="status" aria-describedby="emailHelp">
+                    <select class="custom-select" id="status" name="status">
+                        <option selected>Pilih...</option>
+                        <option value="Dipinjam">Dipinjam</option>
+                        <option value="Dikembalikan">Dikembalikan</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label>Keterangan</label>
-                    <input type="text" class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp">
+                    <label for="keterangan">Keterangan</label>
+                    <textarea type="text" class="form-control" id="keterangan" name="keterangan" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah</button>
             </form>

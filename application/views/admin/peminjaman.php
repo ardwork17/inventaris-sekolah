@@ -35,7 +35,7 @@
                         <td>
                             <div class="box-footer text-center">
                                 <a class="badge badge-primary" href="<?= base_url('admin/edit_pinjam/' . $a['id']); ?>">Edit</a>
-                                <a class="badge badge-danger" href="<?= base_url('admin/hapus/' . $a['id']);
+                                <a class="badge badge-danger" href="<?= base_url('admin/hapus_pinjam/' . $a['id']);
                                                                     ?>" onclick="return confirm('Yakin Hapus Data?');">Hapus</a>
                             </div>
                         </td>

@@ -42,4 +42,10 @@ class M_barang extends CI_Model
         $this->db->where($where);
         $this->db->update($table, $data);
     }
+
+    public function hapus_pinjam($where, $table)
+    {
+        $this->db->where($where);
+        $this->db->delete($table);
+    }
 }
